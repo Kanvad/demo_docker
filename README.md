@@ -1,5 +1,8 @@
-## Demo docker
+## Demo docker on windows
+> install docker first and follow steps
 - open terminal
+> [!Caution]<br>
+> Open terminal or powwer shell not use cmd
 ```bash
 git clone https://github.com/Kanvad/demo_docker.git
 cd demo_docker
@@ -29,4 +32,9 @@ docker rm -f $(docker ps -a -q)
 - remove image
 ```bash
 docker rmi -f $(docker images -q)
+```
+### Delete folder
+```bash
+cd ..
+rm demo_docker -Recurse -Force
 ```
