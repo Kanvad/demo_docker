@@ -1,5 +1,5 @@
 ## Demo docker on windows
-> install docker first and follow steps
+> install docker and git first and follow steps
 - open terminal
 > [!Caution]<br>
 > Open terminal or powwer shell not use cmd
@@ -15,16 +15,12 @@ docker build -t demo .
 ```bash
 docker run -d -p 8081:80 demo
 ```
-## http://localhost:8081<br>
+### Open browser and visit http://localhost:8081<br>
 > use port 8080 or 8081 or more
 - stop container
 ```bash
 docker stop $(docker ps -a -q)
-or
-docker stop id_container
 ```
-> replace id_container by id container<br>
-> use docker ps
 - remove container
 ```bash
 docker rm -f $(docker ps -a -q)
